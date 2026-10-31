@@ -118,3 +118,17 @@ python -m streamlit run app_local.py
 
 This project is developed for educational and informational purposes.
 It does not replace professional legal advice.
+
+## Application Screenshots
+
+### 1. Home Page
+![Home Page](screenshots/home_screen.png)
+
+### 2. PDF Upload
+![PDF Upload](screenshots/pdf_processing.png)
+
+### 3. Question Analysis
+![Question Analysis](screenshots/Analzing_Question.png)
+
+### 4. Question Answering
+![Question Answering](screenshots/Question_Answering.png)
