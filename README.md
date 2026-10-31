@@ -55,8 +55,8 @@ and generate simple, context-based answers.
 ### 1. Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd AI_Legal_Document_Analyzer_Local
+git clone https://github.com/08Harika/AI-Legal-Document-Analyzer-RAG.git
+cd AI-Legal-Document-Analyzer-RAG
 ```
 
 ### 2. Create a virtual environment
@@ -67,7 +67,7 @@ py -3.11 -m venv .venv_rag
 
 ### 3. Activate the environment
 
-Windows Command Prompt:
+Windows Command Prompt
 
 ```cmd
 .venv_rag\Scripts\activate.bat
@@ -95,7 +95,7 @@ ollama pull nomic-embed-text
 ### 7. Run the application
 
 ```bash
-python -m streamlit run app_local.py
+.\.venv_rag\Scripts\python.exe -m streamlit run app_local.py
 ```
 
 ## Sample Questions
