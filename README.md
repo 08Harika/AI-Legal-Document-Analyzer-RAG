@@ -132,3 +132,24 @@ It does not replace professional legal advice.
 
 ### 4. Question Answering
 ![Question Answering](screenshots/Question_Answering.png)
+
+### 4. Question Answering
+![Question Answering](screenshots/Question_Answering.png)
+
+## System Architecture
+
+The following diagram illustrates the Retrieval-Augmented Generation (RAG) workflow used in the application.
+### Architecture_diagram
+![Architecture](screenshots/ai_legal_document_analyzer_rag_architecture.png)
+
+### Architecture Explanation
+
+1. **PDF Upload:** The user uploads a legal document through Streamlit.
+2. **Text Extraction:** PyPDFLoader extracts text from the uploaded PDF.
+3. **Chunking:** The extracted text is divided into smaller overlapping chunks.
+4. **Embedding Generation:** Nomic Embed Text converts text chunks into numerical vectors.
+5. **Vector Storage:** FAISS stores the generated vectors for efficient retrieval.
+6. **Question Processing:** The user's question is converted into an embedding and matched against stored vectors.
+7. **Retrieval:** The system retrieves the top 4 relevant chunks.
+8. **Response Generation:** Llama 3.2 uses the retrieved context to generate an answer.
+9. **Output:** The answer and relevant source information are displayed through Streamlit.
