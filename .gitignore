@@ -1,0 +1,37 @@
+
+# Python virtual environments
+.venv/
+.venv_rag/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Local databases and generated indexes
+faiss_index/
+vector_store/
+chroma_db/
+
+# Temporary and uploaded files
+uploads/
+temp/
+*.tmp
+
+# IDE settings
+.vscode/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+/notepad test_local.py
+/python
